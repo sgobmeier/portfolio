@@ -1,42 +1,87 @@
 <!DOCTYPE html>
 
 <html>
-    <head>
-        <link rel="stylesheet" url="style.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
-    </head>
-    <body>
-        <header>
-            <nav>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#development">Development</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
-        <main>
-            <section id="home">
-                <div>
-                    <h1>I'm <span class="accent">Sebastian</span></h1>
 
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <a href="#home"><span class="accent">Sebastian</span> Gobmeier</a>
+        <nav>
+            <ul>
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#development">Development</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <div id="introductionContainer">
+                <h1>I'm <span class="accent">Sebastian</span></h1>
+                <h4>a <span class="accent">Software Engineer</span> from Berlin</h4>
+            </div>
+            <div id="portraitContainer">
+                <img src="media/hero-shot.png" alt="self-portrait">
+            </div>
+        </section>
+
+        <section id="about">
+            <div id="aboutMeContainer">
+                <h2>About Me</h2>
+                <p>I'm a 25 year old Software Engineer and Project Manager living in the vicinity of Berlin. <br>
+                    From day one, my life has been guided by my fascination and optimism for technology, <br>
+                    which ultimately led me to career paths across various technical fields. <br>
+                    <br>
+                    I truly believe the most valuable human capability is the capability to create and <br>
+                    that technological advancement will ultimately be the key enabler of a better life in abundance for
+                    all people. <br>
+                    My personal mission therefore is to maximize my contribution to humanity with clever, creative and
+                    technical solutions.
+                </p>
+                <div id="cardContainer">
+                    <div class="card">
+                        <h3 class="white">Skills</h3>
+                        <ul>
+                            <li>Project Management</li>
+                            <li>Full-Stack Web Development</li>
+                            <li>React</li>
+                            <li>Python</li>
+                            <li>MySQL</li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <h3 class="white">Interests</h3>
+                        <ul>
+                            <li>3D-Printing</li>
+                            <li>Electrical Engineering</li>
+                            <li>Mechanical Engineering</li>
+                        </ul>
+                    </div>
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <section id="about">
-                
-            </section>
+        <section id="development">
+            <div id="timelineContainer">
+                <div id="timelineText"></div>
+            </div>
+        </section>
 
-            <section id="development">
-                
-            </section>
+        <section id="contact">
 
-            <section id="contact">
-                
-            </section>
-        </main>
-    </body>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+
 </html>
